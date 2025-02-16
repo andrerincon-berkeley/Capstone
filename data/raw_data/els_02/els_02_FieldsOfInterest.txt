@@ -1,0 +1,235 @@
+BYF3PSTSTU
+STU_ID		Student ID
+F1UNIV1		Sample member status in BY and F1 rounds
+F1UNIV2A	Base year status and how sample member entered F1 sample
+F2UNIV_P	Sample member status in first 3 rounds
+BYSEX		Sex-composite
+BYRACE		Student's race/ethnicity-composite
+BYSTLANG	Whether English is student's native language-composite
+BYHOMLNG	Student's native language-composite
+BYPARED		Parents' highest level of education
+BYINCOME	Total family income from all sources 2001-composite
+BYSES1		Socio-economic status composite, v.1
+BYSES1QU	Quartile coding of SES1 variable
+BYSES2		Socio-economic status composite, v.2
+BYSES2QU	Quartile coding of SES2 variable
+BYGRDRPT	Number of grades repeated (K-10)
+BYLGRRPT	Last grade repeated (K-10)
+BYRISKFC	Number of academic risk factors in 10th grade
+BYSTEXP		How far in school student thinks will get-composite
+BYPARASP	How far in school parent wants 10th-grader to go-composite
+BYOCCHS		Occupation right after high school-coded
+BYOCC30		Occupation at age 30-coded
+BYSCHPRG	High school program reported by student-composite
+BYTXCSTD	Standardized test composite score-math/reading
+BYTXCQU		Standardized composite test quartile (1=low)
+BYNELS2M	ELS-NELS 1992 scale equated sophomore math score
+BYNELS2R	ELS-NELS 1992 scale equated sophomore reading score
+BYNELS0M	ELS-NELS 1990 scale equated sophomore math score
+BYPISAME	ELS:2002-PISA:2003 concordance math score
+BYPISARE	ELS:2002-PISA:2000 concordance reading score
+BYTXMIRR	Math IRT estimated number right
+BYTXMSTD	Math test standardized score
+BYTXMQU		Mathematics quartile (1=low)
+BYTX1MPP	Mathematics proficiency probability at level 1
+BYTX2MPP	Mathematics proficiency probability at level 2
+BYTX3MPP	Mathematics proficiency probability at level 3
+BYTX4MPP	Mathematics proficiency probability at level 4
+BYTX5MPP	Mathematics proficiency probability at level 5
+BYTXRIRR	Reading IRT estimated number right
+BYTXRSTD	Reading test standardized score
+BYTXRQU		Reading quartile (1=low)
+BYTX1RPP	Reading proficiency probability at level 1
+BYTX2RPP	Reading proficiency probability at level 2
+BYTX3RPP	Reading proficiency probability at level 3
+BYMATHSE	BY mathematics self-efficacy
+BYENGLSE	BY English self-efficacy scale
+BYCONEXP	Control expectation scale
+BYINSTMO	Instrumental motivation (utility interest) scale
+BYACTCTL	Action control: general effort and persistence scale
+BYSTPREP	Class preparation scale
+BYWRTNGA	Student writing ability (teacher-reported)
+BYHISPOR	BY highest level of participation in interscholastic athletics
+BYNSPORT	BY number of interscholastic sports participated in at V or JV level
+BYXTRACU	Number of school-sponsored activities participated in 01-02
+BYHMWRK		BY hours per week spent on homework (in and out of school)
+BYTVVIGM	BY hrs/day watching TV/videos/playing video games (weekdays)
+BYWORKSY	Student held job for pay during 2001-2002 school year
+BYWRKHRS	BY hours worked per week during 01-02 school year
+BYG10EP		Grade 10 enrollment-2001/02 school roster-categorical
+BYSCENP		Oct 2001 total school enrollment-administrator quex-categorical
+BYSCTRL		School control
+BYURBAN		School urbanicity
+BYREGION	Geographic region of school
+BYREGURB	School type - region by urbanicity
+BY10FLP		Grade 10 percent free lunch-categorical
+BYACCLIM	BY Academic climate scale
+BYINCMIM	Imputation flag - BYINCOME (BYP85)
+F1SEX		F1 sex-composite
+F1RACE		F1 student's race/ethnicity-composite
+F1STLANG	F1 whether English is student's native language-composite
+F1DOB_P		F1 student's year and month of birth
+F1FCOMP		F1 family composition
+F1SES1		F1 socio-economic status composite, v.1
+F1SES1QU	F1 quartile coding of SES1 variable
+F1SES2		F1 socio-economic status composite, v.2
+F1SES2QU	F1 quartile coding of SES2 variable
+F1STEXP		F1 how far in school student thinks will get-composite
+F1BYEDEX	BY-F1 bachelor^s degree expectation change
+F1OCC30		F1 occupation at age 30-coded
+F1DOSTAT	F1 dropout status
+F1GRADE		F1 grade attended
+F1TXMBIR	F1 math IRT estimated number right for base year scores
+F1TXM1IR	F1 math IRT estimated number right for F1 scores
+F1TXMSTD	F1 math standardized score
+F1TXMQU		F1 math quartile score
+F1NELS2M	F1 NELS-equated math estimated N-right
+F1TX1MPP	F1 mathematics proficiency probability at level 1
+F1TX2MPP	F1 mathematics proficiency probability at level 2
+F1TX3MPP	F1 mathematics proficiency probability at level 3
+F1TX4MPP	F1 mathematics proficiency probability at level 4
+F1TX5MPP	F1 mathematics proficiency probability at level 5
+F1BYMTGN	IRT math estimated number right gain: BY to F1
+F1HIMATH	F1 highest math course of a half year or more
+F1PSEPLN	F1 postsecondary plans right after high school
+F1XTRACU	Number of school-sponsored activities participated in 03-04
+F1WRKHRS	F1 hours worked per week during 03-04 school year
+F1TVVIGM	F1 hrs/day watching TV/videos/playing video games (weekdays)
+F1COLINF	F1 sources for college information
+F1MATHSE	F1 mathematics self-efficacy
+F1RHTUNP	Total Carnegie units - categorized
+F1RMAT_P	Units in mathematics (SST) - categorical
+F1RGPP2		GPA for all courses taken in the 9th - 12th grades - categorical
+F2EVERDO	F2 ever dropped out
+F2DOSTAT	F2 dropout status (as of 2006 interview)
+F2F1GR_P	F1 grade level spring term 2004 (updated)
+F2HSSTAT	High school completion status in 2006
+F2F1HSST	High school completion status as of summer 2004
+F2HSATTM	High school attainment indicator (academic risk)
+F2EDLEVL	Highest level of education attempted
+F2HIGRDE	Highest grade level attempted
+F2HSCPP2	Year received high school diploma, certificate or GED
+F2PSEEXM	Whether took college entrance exams
+F2EVRAPP	Ever applied to postsecondary school - composite
+F2NAPP1P	Number of schools respondent applied to
+F2NAPP2P	Number of schools respondent applied to (revised)
+F2NACC1P	Number of schools that accepted respondent
+F2NACC2P	Number of schools that accepted respondent (revised)
+F2NAPAID	Number of applied-to schools which offered respondent financial aid
+F2NATT_P	Number of schools respondent attended
+F2PS1LVL	Level of offering of first postsecondary institution
+F2PS1CTR	Control of first postsecondary institution
+F2PS1SEC	Sector of first postsecondary institution
+F2PS1GRT	Offered scholarship/grant for first year at first postsec institution
+F2PS1LN		Offered loan for first year at first postsecondary institution
+F2PS1WKS	Offered work-study for first year at first postsecondary institution
+F2PS1WVR	Offered tuition waiver/discount - 1st year at 1st postsec institution
+F2PS1AID	Whether offered financial aid 1st yr at 1st postsec institution
+F2PS1NTY	Number of types of aid offered by first postsecondary institution
+F2PS1FTP	Enrollment intensity at first postsecondary institution
+F2PS1OUT	Whether 1st postsecondary institution out of state of residence
+F2PS1EEX	College entrance exam scores relative to average scores at 1st PS inst
+F2PS1REM	Took math/writing/reading remedial course at 1st postsec institution
+F2ENRGAP	Whether there was a gap in postsecondary enrollment
+F2SWITCH	Whether transferred or switched postsecondary institutions
+F2PS2006	2006 postsecondary institution link number
+F2MJR2_P	Major in 2006 2-digit code
+F2STEXP		Highest level of education respondent expects to complete - composite
+F2CURWGE	Standardized current job wage rate (per hour)
+F2QXDATP	F2 date completed interview
+F3NRSTAT	F3 nonresponse status
+F3QDATE		Date completed F3 interview
+F3JUNEDSTAT	Postsecondary enrollment status as of June 2012
+F3EVRATT	F3 ever attended a postsecondary institution
+F3EDSTAT	Postsecondary enrollment status as of the F3 interview
+F3PS1OUT	Whether 1st PS institution was out-of-state
+F3PS1RETAIN	Status relative to first-attended postsecondary institution
+F3PSLLVL	Level of last/currently attended PS institution
+F3PSLCTR	Control of last/currently attended PS institution
+F3PSLSEC	Sector of last/currently attended PS institution
+F3PSLCRED	Whether R earned a credential from their last/currently attended PS institution
+F3PS2BA		Number of months between PS entry and BA completion
+F3NATTND	Number of postsecondary institutions attended
+F3NUMPUB	Number of public postsecondary institutions attended
+F3NUMMOD4	Number of moderately-selective 4-year PS institutions attended
+F3PSSELECT	Highest selectivity among all attended postsecondary institutions
+F3ATTAINMENT	Highest level of education earned as of F3
+F3F1EDEXPFF	Fulfillment of F1 educational expectations as of F3
+F3STEXP		Highest level of education respondent expects to complete - composite
+F3EMPSTAT	Employment status as of the F3 interview
+F3ONET2CURR	2-digit ONET code for current/most recent job
+F3SEICURR	SEI-based code for current/most recent job
+F3SPERN2011	2011 employment income:  spouse/partner only
+F3STLOANEVR	Whether R took out any student/PSE loans
+F3STLOANAMT	Total amount borrowed in student loans
+F3JOBSATIS	Social-cognitive career theory:  job satisfaction index/scale score
+F3SES		Sample member's socioeconomic status as of F3
+F3SESQU		Quartile coding of the sample member's socioeconomic status as of F3
+F3REGION	Region of F3 residence
+F3CNSDUE	Consolidated loan: amount owed, principal and interest (as of F3)
+F3TZDEG1SEC	Transcript: Sector of institution where first known degree attained
+F3TZDEG1SLC	Transcript: Institutional selectivity of institution where first known degree attained
+F3TZBCH1CIP2	Transcript: First known bachelor's degree major/field of study: 2-digit CIP
+F3TZBCHLCIP2	Transcript: Most recent known bachelor's degree major/field of study: 2-digit CIP
+F3TZSTEM1CRED	ranscript: Ever earned a postsecondary credential in a STEM field as of June 2013 (SMART grant definition)
+F3TZPS2BA	Transcript: Elapsed time from known entry to bachelor's degree
+F3TZGPAALL	Transcript: GPA at all known institutions attended
+BYS20J		Does not feel safe at this school
+BYS23A		Won an academic honor
+BYS23C		Recognized for good grades
+BYS24C		How many times absent from school
+BYS27D		Education is important to get a job later
+BYS55B		Plans to take SAT or ACT
+BYS55C		Plans to take Advanced Placement test
+BYS59A		Has gone to counselor for college entrance information
+BYS59B		Has gone to teacher for college entrance information
+BYS59C		Has gone to coach for college entrance information
+BYS59D		Has gone to parent for college entrance information
+BYS59E		Has gone to friend for college entrance information
+BYS59F		Has gone to sibling for college entrance information
+BYS59G		Has gone to other relative for college entrance information
+BYS59H		Has gone to college publications/websites for entrance information
+BYS59I		Has gone to college representatives for entrance information
+BYS59J		Has gone to college search guides for entrance information
+BYS62A		Does not like school
+BYS62B		Grades are not good enough
+BYS62D		Cannot afford school
+BYS62E		Would rather work and earn money
+BYS62G		Does not feel school is important
+BYS62H		Needs to support family
+F1S48A   	Has gone to college representatives for entrance information - Guidance counselor
+F1S48B      	Has gone to college representatives for entrance information - Teacher
+F1S48C      	Has gone to college representatives for entrance information - Coach
+F1S48D      	Has gone to college representatives for entrance information - Parent
+F1S48E      	Has gone to college representatives for entrance information - Brother or sister
+F1S48F      	Has gone to college representatives for entrance information - Other relative
+F1S48G      	Has gone to college representatives for entrance information - Friend
+F1S48H      	Has gone to college representatives for entrance information - College representatives
+F1S48I      	Has gone to college representatives for entrance information - A college's publication or website
+F1S48J      	Has gone to college representatives for entrance information - College search guides, publications, or websites
+F1S48K      	Has gone to college representatives for entrance information - School library
+F1S48L      	Has gone to college representatives for entrance information - Public library
+F1S48M      	Has gone to college representatives for entrance information - College or university library
+F1S48N      	Has gone to college representatives for entrance information - None of the above
+F1S52A		Post-sec school's low expenses important to respondent
+F1S52B		Availability of post-sec financial aid important to respondent
+F1S52F		Living at home while attending post-sec important to respondent
+F1S52I		Post-sec school's job placement record important to respondent
+F1S52K		Post-sec school's academic reputation important to respondent
+F1S52L		Post-sec school's easy admission important to respondent
+F1S55A		Guidance counselor helped select possible jobs
+
+
+
+last = F1S64E
+
+
+
+
+
+
+
+
+
+
+

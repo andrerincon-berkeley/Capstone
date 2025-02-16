@@ -1,2 +1,3 @@
 data/raw_data/hsls_09/*.csv
+data/raw_data/els_02/*.csv
 data/processed_data/
