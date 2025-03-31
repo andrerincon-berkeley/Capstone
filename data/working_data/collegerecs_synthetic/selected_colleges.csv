@@ -1,0 +1,176 @@
+school_id,school_name,avg_total_sat,avg_total_act
+100751,"The University of Alabama",1105,27
+100858,"Auburn University",1160,27
+100937,"Birmingham-Southern College",1085,26
+102049,"Samford University",1129,26
+102234,"Spring Hill College",1095,25
+106342,"Lyon College",1033,24
+106397,"University of Arkansas",1115,26
+107044,"Harding University",1100,25
+107080,"Hendrix College",1230,29
+107141,"John Brown University",1130,26
+104151,"Arizona State University Campus Immersion",1150,25
+110404,"California Institute of Technology",1555,35
+110413,"California Lutheran University",1097,25
+110422,"California Polytechnic State University-San Luis Obispo",1255,29
+110635,"University of California-Berkeley",1405,33
+110644,"University of California-Davis",1190,28
+126614,"University of Colorado Boulder",1190,28
+126775,"Colorado School of Mines",1335,31
+126818,"Colorado State University-Fort Collins",1135,26
+127060,"University of Denver",1210,29
+128328,"United States Air Force Academy",1315,30
+129020,"University of Connecticut",1230,29
+130226,"Quinnipiac University",1085,25
+130624,"United States Coast Guard Academy",1255,28
+130794,"Yale University",1510,34
+131159,"American University",1245,29
+131469,"George Washington University",1285,30
+131496,"Georgetown University",1420,32
+130943,"University of Delaware",1170,26
+133492,"Eckerd College",1105,25
+133881,"Florida Institute of Technology",1160,27
+134079,"Florida Southern College",1135,27
+134097,"Florida State University",1195,27
+134130,"University of Florida",1275,29
+139144,"Berry College",1150,27
+139393,"Covenant College",1175,27
+139658,"Emory University",1395,32
+139755,"Georgia Institute of Technology-Main Campus",1410,32
+139861,"Georgia College & State University",1125,24
+230047,"Brigham Young University-Hawaii",1066,24
+153144,"Coe College",1145,25
+153162,"Cornell College",1123,26
+153269,"Drake University",1195,28
+153384,"Grinnell College",1425,32
+153658,"University of Iowa",1170,26
+143358,"Bradley University",1100,25
+144050,"University of Chicago",1525,34
+145600,"University of Illinois Chicago",1113,24
+145637,"University of Illinois Urbana-Champaign",1383,29
+145646,"Illinois Wesleyan University",1265,27
+150163,"Butler University",1164,28
+150400,"DePauw University",1160,27
+150534,"University of Evansville",1105,26
+150677,"Grace College and Theological Seminary",1050,24
+151351,"Indiana University-Bloomington",1175,27
+154712,"Benedictine College",1063,25
+156213,"Asbury University",1120,25
+156286,"Bellarmine University",1070,25
+156295,"Berea College",1110,25
+156408,"Centre College",1210,29
+157085,"University of Kentucky",1125,26
+159391,"Louisiana State University and Agricultural & Mechanical College",1130,26
+159656,"Loyola University New Orleans",1130,26
+164465,"Amherst College",1458,33
+164580,"Babson College",1270,29
+164739,"Bentley University",1175,28
+164924,"Boston College",1360,32
+164988,"Boston University",1320,30
+162928,"Johns Hopkins University",1485,33
+163268,"University of Maryland-Baltimore County",1220,27
+163286,"University of Maryland-College Park",1315,31
+163295,"Maryland Institute College of Art",1155,25
+163912,"St. Mary's College of Maryland",1125,26
+161086,"Colby College",1371,32
+168546,"Albion College",1045,23
+169080,"Calvin University",1168,26
+169983,"Kettering University",1230,27
+170286,"Hillsdale College",1315,30
+170301,"Hope College",1135,26
+173160,"Bethel University",1127,25
+173258,"Carleton College",1430,32
+173452,"Martin Luther College",1230,24
+173902,"Macalester College",1375,31
+174066,"University of Minnesota-Twin Cities",1315,29
+178396,"University of Missouri-Columbia",1155,26
+178402,"University of Missouri-Kansas City",1140,25
+178411,"Missouri University of Science and Technology",1282,28
+178615,"Truman State University",1200,27
+178697,"College of the Ozarks",1093,23
+175980,"Millsaps College",1144,26
+180106,"Carroll College",1105,25
+180416,"Montana Technological University",1105,24
+180461,"Montana State University",1130,25
+197869,"Appalachian State University",1135,25
+198385,"Davidson College",1345,31
+198419,"Duke University",1475,33
+198516,"Elon University",1190,27
+199111,"University of North Carolina Asheville",1145,26
+200156,"University of Jamestown",1015,23
+181002,"Creighton University",1165,27
+181446,"Nebraska Wesleyan University",1090,24
+181464,"University of Nebraska-Lincoln",1135,25
+182670,"Dartmouth College",1455,32
+183044,"University of New Hampshire-Main Campus",1095,25
+183239,"Saint Anselm College",1135,26
+184782,"Rowan University",1125,25
+185828,"New Jersey Institute of Technology",1210,26
+186131,"Princeton University",1495,34
+186380,"Rutgers University-New Brunswick",1230,nan
+186584,"Seton Hall University",1160,25
+187967,"New Mexico Institute of Mining and Technology",1230,26
+188526,"Albany College of Pharmacy and Health Sciences",1140,25
+189097,"Barnard College",1370,31
+190044,"Clarkson University",1182,27
+190099,"Colgate University",1375,32
+190150,"Columbia University in the City of New York",1500,34
+201645,"Case Western Reserve University",1385,32
+201654,"Cedarville University",1195,26
+201885,"University of Cincinnati-Main Campus",1160,26
+202480,"University of Dayton",1130,27
+202523,"Denison University",1285,30
+207324,"Oklahoma Christian University",1080,25
+207388,"Oklahoma State University-Main Campus",1085,24
+207403,"Oklahoma Baptist University",1043,23
+207458,"Oklahoma City University",1109,26
+207500,"University of Oklahoma-Norman Campus",1203,26
+209056,"Lewis & Clark College",1280,29
+209551,"University of Oregon",1100,25
+209825,"University of Portland",1190,nan
+209922,"Reed College",1380,31
+211088,"Arcadia University",1105,26
+211273,"Bryn Mawr College",1335,30
+211291,"Bucknell University",1290,30
+211440,"Carnegie Mellon University",1465,33
+212054,"Drexel University",1190,28
+243151,"University of Puerto Rico at Cayey",1097,nan
+217156,"Brown University",1470,33
+217402,"Providence College",1135,26
+217493,"Rhode Island School of Design",1210,27
+217819,"College of Charleston",1095,25
+217882,"Clemson University",1245,29
+218663,"University of South Carolina-Columbia",1210,28
+218973,"Wofford College",1160,27
+219000,"Augustana University",1080,26
+219347,"South Dakota School of Mines and Technology",1165,27
+219709,"Belmont University",1145,27
+219976,"Lipscomb University",1129,25
+220215,"Freed-Hardeman University",996,24
+221351,"Rhodes College",1265,29
+221759,"The University of Tennessee-Knoxville",1145,27
+222983,"Austin College",1205,26
+223232,"Baylor University",1215,28
+224323,"University of Dallas",1165,27
+227757,"Rice University",1490,34
+227845,"Saint Edward's University",1105,25
+230038,"Brigham Young University",1270,29
+230807,"Westminster University",1105,25
+231624,"William & Mary",1360,31
+231712,"Christopher Newport University",1155,26
+232186,"George Mason University",1155,27
+232423,"James Madison University",1125,25
+232681,"University of Mary Washington",1110,25
+230959,"Middlebury College",1388,32
+231174,"University of Vermont",1200,28
+235316,"Gonzaga University",1205,28
+236577,"Seattle Pacific University",1110,24
+236595,"Seattle University",1180,28
+236948,"University of Washington-Seattle Campus",1245,29
+237011,"Western Washington University",1105,26
+238333,"Beloit College",1218,27
+239017,"Lawrence University",1270,29
+239105,"Marquette University",1155,27
+239318,"Milwaukee School of Engineering",1250,28
+239716,"Saint Norbert College",1095,25
+240727,"University of Wyoming",1085,24
