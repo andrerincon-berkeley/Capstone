@@ -1,4 +1,4 @@
-# UNITID,INSTNM,selectivity,type,INSTSIZE,federalFinAid?,GROFFER,urbanicity,STABBR,HBCU,TRIBAL
+UNITID,INSTNM,selectivity,type,INSTSIZE,federalFinAid?,GROFFER,urbanicity,STABBR,HBCU,TRIBAL
 100654,Alabama A & M University,3,1,3,1,1,1,AL,1,0
 100663,University of Alabama at Birmingham,2,1,4,1,1,1,AL,0,0
 100690,Amridge University,3,2,1,1,1,1,AL,0,0
@@ -1506,7 +1506,7 @@
 163046,Loyola University Maryland,1,2,3,1,1,1,MD,0,0
 163107,Maryland Beauty Academy,-1,3,1,1,2,2,MD,0,0
 163204,University of Maryland-University College,3,1,5,1,1,2,MD,0,0
-163259,University of Maryland, Baltimore,3,1,3,1,1,1,MD,0,0
+163259,University of Maryland, Baltimore,3,1,3,1,1,1,MD,0
 163268,University of Maryland-Baltimore County,1,1,4,1,1,2,MD,0,0
 163286,University of Maryland-College Park,1,1,5,1,1,2,MD,0,0
 163295,Maryland Institute College of Art,1,2,2,1,1,1,MD,0,0
@@ -2262,7 +2262,7 @@
 189848,Cazenovia College,3,2,2,1,2,3,NY,0,0
 189857,Central Yeshiva Tomchei Tmimim Lubavitz,3,2,1,1,1,1,NY,0,0
 189954,Cheryl Fells School of Business,-1,3,1,1,2,2,NY,0,0
-189990,Christine Valmy International School for Esthetics, Skin Care & Makeup,-1,3,1,1,2,1,NY,0,0
+189990,Christine Valmy International School for Esthetics, Skin Care & Makeup,-1,3,1,1,2,1,NY,0
 190008,Circle in the Square Theatre School,-1,2,1,1,2,1,NY,0,0
 190035,CUNY System Office,-1,1,-2,1,1,1,NY,0,0
 190044,Clarkson University,1,2,2,1,1,3,NY,0,0
@@ -4481,7 +4481,7 @@
 391564,The Salter School-Tewksbury Campus,-1,3,1,-1,2,2,MA,0,0
 391759,Sharps Academy of Hair Styling,-1,3,1,1,2,2,MI,0,0
 392257,College of Health Care Professions-Northwest,3,3,2,1,2,1,TX,0,0
-392354,School of Professional Horticulture, New York Botanical Garden,-1,2,1,1,2,1,NY,0,0
+392354,School of Professional Horticulture, New York Botanical Garden,-1,2,1,1,2,1,NY,0
 392415,Fortis College-Houston,-1,3,1,1,2,1,TX,0,0
 392798,Volunteer Beauty Academy-Madison,-1,3,1,-1,2,1,TN,0,0
 392840,Watkins College of Art Design & Film,2,2,1,1,2,1,TN,0,0
@@ -6947,7 +6947,7 @@
 486406,Randolph Technical Center,-1,1,1,1,2,3,WV,0,0
 486415,AMG School of Licensed Practical Nursing,-1,3,1,1,2,1,NY,0,0
 486424,Saint Michael College of Allied Health,-1,3,1,1,2,2,VA,0,0
-486442,Sandra Academy of Salon Services, Inc,-1,3,1,1,2,3,TN,0,0
+486442,Sandra Academy of Salon Services, Inc,-1,3,1,1,2,3,TN,0
 486479,Dermalogica Academy,-1,3,1,-1,2,1,NY,0,0
 486488,California Jazz Conservatory,-1,2,1,1,2,1,CA,0,0
 486497,California Barber and Beauty College,-1,3,1,1,2,1,CA,0,0
