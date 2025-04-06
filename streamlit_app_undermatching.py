@@ -56,10 +56,9 @@ with st.sidebar.form("login_form"):
             st.sidebar.error("Invalid credentials.")
 
 # Logout
-if st.session_state.logged_in_user:
-    if st.sidebar.button("Logout"):
-        st.session_state.clear()
-        st.experimental_rerun()
+if st.sidebar.button("Logout"):
+    st.session_state["logged_in_user"] = None
+    st.experimental_rerun()
 
 # Main App
 main_logo = """
