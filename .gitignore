@@ -3,3 +3,5 @@ data/raw_data/els_02/*.csv
 data/raw_data/hsls_09/*.zip
 data/raw_data/els_02/*.zip
 data/processed_data/
+logs/
+*.log
