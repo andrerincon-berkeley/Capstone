@@ -17,7 +17,7 @@ university_recommendations = {
         {"University": "Ohio State University", "Population": "59,837", "Website": "https://www.osu.edu", "Description": "Strong athletics and broad academic programs with great community engagement."},
         {"University": "Penn State University", "Population": "46,606", "Website": "https://www.psu.edu", "Description": "Robust alumni network with excellent career placement resources."},
     ],
-    "Challenge": [
+    "Thrive": [
         {"University": "University of Illinois Urbana-Champaign", "Population": "52,331", "Website": "https://www.illinois.edu", "Description": "Outstanding STEM programs and research opportunities."},
         {"University": "University of Wisconsin-Madison", "Population": "47,932", "Website": "https://www.wisc.edu", "Description": "Exceptional academic rigor with vibrant student life."},
         {"University": "University of Florida", "Population": "55,211", "Website": "https://www.ufl.edu", "Description": "Highly ranked with excellent programs across disciplines."},
@@ -117,3 +117,14 @@ if st.session_state.logged_in_user:
 
 else:
     st.markdown("<div style='text-align:center;color:#555;'>Welcome to BrightPath. Please log in via the sidebar to access personalized content and recommendations tailored for academic success.</div>", unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    with st.expander("📖 About Us"):
+        st.write("BrightPath is dedicated to closing the college opportunity gap by helping students find and apply to universities that match their academic potential. We partner with educators to ensure that no student undermatches.")
+
+    with st.expander("🛠️ Product"):
+        st.write("Our platform offers personalized university recommendations, visual risk insights, and tools for both students and educators to support effective college planning.")
+
+    with st.expander("🤖 Model"):
+        st.write("We use advanced data science techniques to estimate student undermatch risk and align academic profiles with university characteristics. Our models are transparent, fair, and regularly validated.")
