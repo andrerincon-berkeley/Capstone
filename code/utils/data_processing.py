@@ -56,7 +56,23 @@ def encode_and_scale_features(df, logger):
         logger.error(f"Error in encode_and_scale_features: {str(e)}")
         raise
 
-def generate_recommendations(student_features, encoded_df, feature_cols, logger):
+def classify_college(row, target_sat):
+    """Helper function to classify colleges based on SAT score difference."""
+    delta = row["avg_SAT"] - target_sat
+    if -40 <= delta <= -20:
+        return "Foundation"
+    elif -10 <= delta <= 10:
+        return "Thrive"
+    elif 20 <= delta <= 40:
+        return "Aspire"
+    else:
+        return "Other"
+
+def calculate_distance(row, student_state):
+    """Calculate a simple distance score based on state."""
+    return 1 if row["state"] == student_state else 0
+
+def generate_recommendations(student_features, encoded_df, feature_cols, student_data, logger):
     """
     Generate college recommendations based on student features.
     
@@ -64,13 +80,19 @@ def generate_recommendations(student_features, encoded_df, feature_cols, logger)
         student_features (pandas.DataFrame): Processed student input features
         encoded_df (pandas.DataFrame): Training data with encoded features
         feature_cols (list): List of feature columns to use
+        student_data (dict): Original student input data
         logger: Logger object for output messages
         
     Returns:
-        pandas.DataFrame: Recommendations with college statistics
+        pandas.DataFrame: Recommendations with college statistics and categories
     """
     try:
         logger.info("Finding similar students...")
+        
+        # Get the student's SAT score and location
+        target_sat = student_data["SAT"]
+        student_state = student_data["state"]
+        importance_location = student_data["importance_close_to_home"]
         
         # Initialize and fit KNN model
         knn = NearestNeighbors(n_neighbors=25)
@@ -79,20 +101,18 @@ def generate_recommendations(student_features, encoded_df, feature_cols, logger)
         # Find nearest neighbors
         distances, indices = knn.kneighbors(student_features[feature_cols])
         
-        # Get similar students and original data
-        similar_students_idx = indices[0]
-        
-        # Load original data to get non-encoded columns
+        # Load original data
         original_data_path = Path("../data/working_data/collegerecs_synthetic/student_college_history.csv")
         original_df = pd.read_csv(original_data_path)
         
-        # Get similar students from original dataset
-        similar_students = original_df.iloc[similar_students_idx]
+        # Get similar students
+        similar_students = original_df.iloc[indices[0]]
         
         # Calculate college statistics
         college_stats = similar_students.groupby("college_name").agg({
             "SAT": ["count", "mean"],
             "GPA": "mean",
+            "state": lambda x: x.iloc[0],  # Get the state for each college
             "importance_close_to_home": "mean",
             "importance_school_reputation": "mean",
             "importance_school_cost": "mean"
@@ -103,27 +123,69 @@ def generate_recommendations(student_features, encoded_df, feature_cols, logger)
             "num_similar_students",
             "avg_SAT",
             "avg_GPA",
+            "state",
             "avg_importance_location",
             "avg_importance_reputation",
             "avg_importance_cost"
         ]
         
-        # Sort by number of similar students
-        college_stats = college_stats.sort_values(
-            by="num_similar_students", 
-            ascending=False
-        ).head(10)
-        
         # Reset index to make college_name a column
         college_stats = college_stats.reset_index()
         
-        logger.info(f"Generated recommendations for {len(college_stats)} colleges")
-        return college_stats
+        # Add distance information
+        college_stats["same_state"] = college_stats.apply(
+            lambda x: calculate_distance(x, student_state), axis=1
+        )
+        
+        # Add category classification
+        college_stats["category"] = college_stats.apply(
+            lambda x: classify_college(x, target_sat), axis=1
+        )
+        
+        # Adjust ranking based on location importance
+        if importance_location >= 4:  # High importance on location
+            # Prioritize in-state colleges
+            college_stats["rank_score"] = (
+                college_stats["num_similar_students"] * 
+                (1 + 0.5 * college_stats["same_state"])
+            )
+        else:
+            college_stats["rank_score"] = college_stats["num_similar_students"]
+        
+        # Get top colleges for each category
+        categorized_colleges = []
+        for category in ["Foundation", "Thrive", "Aspire"]:
+            category_colleges = college_stats[college_stats["category"] == category] \
+                .sort_values(by="rank_score", ascending=False) \
+                .head(3)
+            categorized_colleges.append(category_colleges)
+        
+        # Combine all categories
+        final_recommendations = pd.concat(categorized_colleges, ignore_index=True)
+        
+        # Reorder columns
+        column_order = [
+            "college_name",
+            "category",
+            "state",
+            "num_similar_students",
+            "avg_SAT",
+            "avg_GPA",
+            "avg_importance_location",
+            "avg_importance_reputation",
+            "avg_importance_cost"
+        ]
+        final_recommendations = final_recommendations[column_order]
+        
+        logger.info(f"Generated recommendations across {len(final_recommendations)} colleges")
+        logger.info(f"Categories represented: {final_recommendations['category'].unique()}")
+        
+        return final_recommendations
         
     except Exception as e:
         logger.error(f"Error in generate_recommendations: {str(e)}")
         raise
-    
+        
 def process_student_input(student_df, feature_cols, scaler, logger):
     """
     Process student input into format needed for recommendations.
