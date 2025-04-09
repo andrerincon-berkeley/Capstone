@@ -8,6 +8,8 @@ users = {
     "1234": {"name": "Miles Dyson", "role": "student", "school": "Lincoln High School", "grade": "12"},
     "5678": {"name": "Sarah Connor", "role": "student", "school": "Lincoln High School", "grade": "11"},
     "9012": {"name": "John Connor", "role": "student", "school": "Lincoln High School", "grade": "12"},
+    "3141": {"name": "Kyle Reese", "role": "student", "school": "Lincoln High School", "grade": "11"},
+    "2718": {"name": "Catherine Weaver", "role": "student", "school": "Lincoln High School", "grade": "12"},
     "111": {"name": "Ms. Smith", "role": "educator", "school": "Lincoln High School", "position": "College Counselor"}
 }
 
@@ -56,9 +58,10 @@ with st.sidebar.form("login_form"):
             st.sidebar.error("Invalid credentials.")
 
 # Logout
-if st.sidebar.button("Logout"):
-    st.session_state["logged_in_user"] = None
-    st.experimental_rerun()
+if st.session_state.logged_in_user:
+    if st.sidebar.button("Logout"):
+        st.session_state.clear()
+        st.experimental_rerun()
 
 # Main App
 main_logo = """
@@ -96,7 +99,15 @@ if st.session_state.logged_in_user:
 
         for uid, student in users.items():
             if student["role"] == "student" and student["grade"] in grade_filter:
-                student_risk_score = np.random.randint(20, 80)
+                if student["name"] == "Miles Dyson":
+                    student_risk_score = 75  # Always High
+                elif student["name"] == "Sarah Connor":
+                    student_risk_score = 30  # Always Low
+                elif student["name"] == "John Connor":
+                    student_risk_score = 50  # Always Medium
+                else:
+                    student_risk_score = np.random.randint(20, 80)
+
                 risk_level = "Low" if student_risk_score < 40 else "Medium" if student_risk_score < 60 else "High"
 
                 if risk_level in risk_filter:
